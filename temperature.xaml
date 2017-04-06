@@ -1,0 +1,75 @@
+﻿<Window x:Class="Ergasia_allilepidrasi.temperature"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ergasia_allilepidrasi"
+        mc:Ignorable="d"
+        Title="temperature" Height="300" Width="300">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="1"/>
+            <GradientStop Color="White"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="260*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="271*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <TextBox x:Name="textBox" Height="38.116" BorderThickness="0" Margin="47.65,34.931,103.45,0" TextWrapping="Wrap" Text="Current temperature:" VerticalAlignment="Top" Foreground="Black" Grid.Column="1" Grid.Row="1">
+            <TextBox.SelectionBrush>
+                <ImageBrush/>
+            </TextBox.SelectionBrush>
+            <TextBox.BorderBrush>
+                <ImageBrush/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Right" BorderThickness="0" Height="28.814" Margin="0,34.931,66.822,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="36.628" Grid.Column="1" Grid.Row="1">
+            <TextBox.SelectionBrush>
+                <ImageBrush/>
+            </TextBox.SelectionBrush>
+            <TextBox.BorderBrush>
+                <ImageBrush/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <Button x:Name="button" Content="Adjust temperature" Margin="81.114,0,83.356,50.667" VerticalAlignment="Bottom" Click="button_Click" Height="28.1" d:LayoutOverrides="Width" Grid.Column="1" Grid.Row="1"/>
+        <Button x:Name="button1" Content="Exit" Margin="104.567,0,103.45,17.374" VerticalAlignment="Bottom" Height="20.626" Click="button1_Click" Grid.Column="1" Grid.Row="1"/>
+        <Button x:Name="toggleButton1" Content="" HorizontalAlignment="Right" Margin="0,51.088,54.587,0" VerticalAlignment="Top" Width="12.235" Height="13.959" Click="toggleButton1_Click" Grid.Column="1" Grid.Row="1">
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush ImageSource="down.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="toggleButton" Content="" HorizontalAlignment="Right" Margin="0,26.931,54.587,0" Width="12.235" Height="13.959" VerticalAlignment="Top" RenderTransformOrigin="2.125,-1.794" Click="toggleButton_Click_1" Grid.Column="1" Grid.Row="1">
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush ImageSource="up.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

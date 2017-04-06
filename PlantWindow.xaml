@@ -1,0 +1,71 @@
+﻿<Window x:Class="Ergasia_allilepidrasi.PlantWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ergasia_allilepidrasi"
+        mc:Ignorable="d"
+        Title="PlantWindow" Height="300" Width="300">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="1"/>
+            <GradientStop Color="#FF811E01" Offset="0.739"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="White"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="259*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="279*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="textBox" Grid.Column="1" BorderThickness="0" Margin="31.667,3.383,29.076,47.999" Grid.Row="1" TextWrapping="Wrap" Text="Introduction............." FontStyle="Italic">
+            <TextBox.BorderBrush>
+                <ImageBrush/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <Button x:Name="button" Content="Get started!" Grid.Column="1" Margin="94.333,0,109.667,28.039" Grid.Row="1" VerticalAlignment="Bottom" Click="button_Click" RenderTransformOrigin="0.516,1.753" BorderBrush="Black"/>
+        <ToggleButton x:Name="toggleButton" Content="something" Grid.Column="1" HorizontalAlignment="Left" Margin="40,72.05,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="Black" Checked="toggleButton_Checked" BorderBrush="Black" Unchecked="toggleButton_Unchecked" Width="72">
+            <ToggleButton.Background>
+                <ImageBrush/>
+            </ToggleButton.Background>
+        </ToggleButton>
+        <TextBox x:Name="textBox1" Grid.Column="1" Height="23"  Margin="53,0,80,64.999" Grid.Row="1" TextWrapping="Wrap" Text="Or add something else" VerticalAlignment="Bottom" FontStyle="Italic" TextChanged="textBox1_TextChanged" BorderBrush="Black" SelectionBrush="Black" GotFocus="textBox1_GotFocus">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <ToggleButton x:Name="toggleButton1" Content="something" Grid.Column="1" HorizontalAlignment="Right" Margin="0,72.05,29.076,0" Grid.Row="1" VerticalAlignment="Top" BorderBrush="Black" Width="72" Checked="toggleButton1_Checked" Unchecked="toggleButton1_Unchecked">
+            <ToggleButton.Background>
+                <ImageBrush/>
+            </ToggleButton.Background>
+        </ToggleButton>
+        <ToggleButton x:Name="toggleButton2" Content="something" Grid.Column="1" HorizontalAlignment="Left" Margin="40,112.717,0,0" Grid.Row="1" Width="72" VerticalAlignment="Top" BorderBrush="Black" Checked="toggleButton2_Checked" Unchecked="toggleButton2_Unchecked">
+            <ToggleButton.Background>
+                <ImageBrush/>
+            </ToggleButton.Background>
+        </ToggleButton>
+        <ToggleButton x:Name="toggleButton3" Content="something" Grid.Column="1" HorizontalAlignment="Right" Margin="0,112.717,29.076,0" Grid.Row="1" Width="72" VerticalAlignment="Top" BorderBrush="Black" Checked="toggleButton3_Checked" Unchecked="toggleButton3_Unchecked">
+            <ToggleButton.Background>
+                <ImageBrush/>
+            </ToggleButton.Background>
+        </ToggleButton>
+        <TextBox x:Name="textBox2" Grid.Column="1"  HorizontalAlignment="Right" Height="23" Margin="0,0,29.076,64.999" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="30.667" BorderBrush="Black" TextChanged="textBox2_TextChanged" SelectionBrush="Black" GotFocus="textBox2_GotFocus">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+
+    </Grid>
+</Window>

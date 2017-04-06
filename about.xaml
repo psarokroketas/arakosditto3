@@ -1,0 +1,49 @@
+﻿<Window x:Class="Ergasia_allilepidrasi.about"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ergasia_allilepidrasi"
+        mc:Ignorable="d"
+        Title="about" Height="300" Width="300">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="1"/>
+            <GradientStop Color="White" Offset="0.413"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="260*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="283*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="textBox" Grid.Column="1" BorderThickness="0" Margin="25.372,1,10,67.627" Grid.Row="1" TextWrapping="Wrap" Text="Modern house (v. 1.0) has been built to make your every day life  significantly easier. It allows you to control all the electronic devices of your house simply through your computer. You can control the temperature of your house and our cameras will make sure that you and your family are safe 24/7. If you have any questions please seek help to the user manual that you have been provided with or contact us at &quot;+30 210-5788420&quot;, or our website &quot;www.modern-house.com&quot;&#xD;&#xA;&#xD;&#xA;Modern house v. 1.0 was developed by:&#xD;&#xA;Stelios Arxontoulis and&#xD;&#xA;Aris Eustathiou&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" FontSize="10">
+            <TextBox.SelectionBrush>
+                <ImageBrush/>
+            </TextBox.SelectionBrush>
+            <TextBox.BorderBrush>
+                <ImageBrush/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <Button x:Name="button" Content="Close" Grid.Column="1" Margin="93.976,0,114.024,10" Grid.Row="1" VerticalAlignment="Bottom" Click="button_Click"/>
+        <TextBox x:Name="textBox1" Grid.Column="1" BorderThickness="0" Height="23" Margin="25.372,0,36.295,39.627" Grid.Row="1" TextWrapping="Wrap" Text="© 2017 STELIOS ARXONTOULIS ALL RIGHTS RESERVED" VerticalAlignment="Bottom" FontSize="8">
+            <TextBox.SelectionBrush>
+                <ImageBrush/>
+            </TextBox.SelectionBrush>
+            <TextBox.BorderBrush>
+                <ImageBrush/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+
+    </Grid>
+</Window>

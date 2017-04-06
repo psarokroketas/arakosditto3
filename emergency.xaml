@@ -1,0 +1,54 @@
+﻿<Window x:Class="Ergasia_allilepidrasi.emergency"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ergasia_allilepidrasi"
+        mc:Ignorable="d"
+        Title="emergency" Height="300" Width="300">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded"/>
+    </Window.Triggers>
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="1"/>
+            <GradientStop Color="Red"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="253*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="67*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Button x:Name="buttonyes" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="37.074,0,0,72.805" Grid.Row="1" VerticalAlignment="Bottom" Width="81.807" Height="20.226" Click="buttonyes_Click"/>
+        <Button x:Name="buttonno" Content="No" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,32.636,72.805" Grid.Row="1" VerticalAlignment="Bottom" Width="81.807" Height="20.226" Click="buttonno_Click"/>
+        <TextBox x:Name="textBox" Grid.Column="1" BorderThickness="0" Height="93.459" Margin="33.5,10,32.636,0" Grid.Row="1" TextWrapping="Wrap" Text="Our cameras detected that you had an accident. Do you need our help?&#xD;&#xA;(The police will be informed automatically if you don't reply in the next minute)" VerticalAlignment="Top" FontStyle="Italic">
+            <TextBox.BorderBrush>
+                <ImageBrush/>
+            </TextBox.BorderBrush>
+            <TextBox.SelectionBrush>
+                <ImageBrush/>
+            </TextBox.SelectionBrush>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <MediaElement x:Name="mediaElement" Grid.Column="1" Margin="4.5,10,0,0" Grid.Row="1" HorizontalAlignment="Left" Width="24" Height="19" VerticalAlignment="Top">
+            <MediaElement.OpacityMask>
+                <ImageBrush/>
+            </MediaElement.OpacityMask>
+        </MediaElement>
+        <Button x:Name="police" Content="Police" Grid.Column="1" HorizontalAlignment="Left" Margin="17,113.54,0,108.54" Grid.Row="1" Width="75" Click="police_Click"/>
+        <Button x:Name="fire" Content="Firestation" Grid.Column="1" Margin="97,113.54,96,108.54" Grid.Row="1" Click="fire_Click"/>
+        <Button x:Name="hosp" Content="Hospital" Grid.Column="1" HorizontalAlignment="Right" Margin="0,113.54,16,108.54" Grid.Row="1" Width="75" Click="hosp_Click"/>
+        <Button x:Name="close" Content="Close" Grid.Column="1" Margin="97,0,96,28.54" Grid.Row="1" VerticalAlignment="Bottom" Click="close_Click"/>
+
+    </Grid>
+</Window>
